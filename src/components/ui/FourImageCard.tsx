@@ -4,7 +4,11 @@ import brand2 from "../../assets/brand-2.webp";
 import brand3 from "../../assets/brand-3.webp";
 import brand4 from "../../assets/brand-4.webp";
 
-const FourImageCard = () => {
+interface Props {
+  bgColor: string;
+}
+
+const FourImageCard = ({ bgColor }: Props) => {
   const categories = [
     { image: brand1, title: "Brand 1" },
     { image: brand2, title: "Brand 2" },
@@ -13,7 +17,9 @@ const FourImageCard = () => {
   ];
 
   return (
-    <div className="relative bg-white p-4 shadow-lg rounded-xl w-full max-w-lg flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+    <div
+      className={`relative p-4 shadow-lg rounded-xl w-full max-w-lg flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl ${bgColor}`}
+    >
       {/* Light glow effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-gray-300/20 rounded-xl blur-lg opacity-50"></div>
 

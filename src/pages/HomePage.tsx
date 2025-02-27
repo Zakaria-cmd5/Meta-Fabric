@@ -1,70 +1,22 @@
+import ArtistSection from "../components/sections/ArtistSection";
 import BrandsSection from "../components/sections/BrandsSection";
+import CreatorSection from "../components/sections/CreatorSection";
+import DesignerSection from "../components/sections/DesignerSection";
 import FashionFutureSection from "../components/sections/FashionFutureSection";
 import InnoFiSection from "../components/sections/InnoFiSection";
-import FourImageCard from "../components/ui/FourImageCard";
-import FullWidthFirstImageCard from "../components/ui/FullWidthFirstImageCard";
 import ImageSlider from "../components/ui/ImageSlider";
-import OneImageCard from "../components/ui/OneImageCard";
-import SectionSlider from "../components/ui/SectionSlider";
 
 const HomePage = () => {
   return (
     <div className="bg-gray-200">
       <ImageSlider />
-      
+
       <BrandsSection />
-      <SectionSlider heading="Explore Our Brands" />
-
-      <div className="mt-10 p-5 flex flex-wrap justify-center gap-8">
-        <div className="flex justify-center w-full gap-4">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-        <div className="flex justify-center w-full gap-4 mt-8">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-      </div>
-      <SectionSlider heading="Explore Our Designer" />
-
-      <div className="mt-10 p-5 flex flex-wrap justify-center gap-8">
-        <div className="flex justify-center w-full gap-4">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-        <div className="flex justify-center w-full gap-4 mt-8">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-      </div>
-      <SectionSlider heading="Explore Our Artist" />
-
-      <div className="mt-10 p-5 flex flex-wrap justify-center gap-8">
-        <div className="flex justify-center w-full gap-4">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-        <div className="flex justify-center w-full gap-4 mt-8">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-      </div>
-      <SectionSlider heading="Explore Our Creator" />
+      <DesignerSection />
+      <ArtistSection />
+      <CreatorSection />
 
       <InnoFiSection />
-
       <FashionFutureSection />
     </div>
   );

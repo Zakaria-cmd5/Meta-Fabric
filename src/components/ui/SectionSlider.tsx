@@ -68,7 +68,7 @@ const SectionSlider = ({ heading }: Props) => {
   };
 
   return (
-    <div className="bg-white w-full py-8">
+    <div className="bg-white mt-10 w-full py-8">
       <h2 className="text-center text-3xl font-bold mb-6">{heading}</h2>
       <div className="relative">
         {/* Image Container */}

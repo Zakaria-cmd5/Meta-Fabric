@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import brand5 from "../../assets/brand-5.webp";
 
-const OneImageCard = () => {
+interface Props {
+  bgColor: string;
+}
+
+const OneImageCard = ({ bgColor }: Props) => {
   return (
     <div
-      className="relative bg-white shadow-lg rounded-xl w-full max-w-lg 
-                 flex flex-col transition-all duration-300 ease-in-out 
-                 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl"
+      className={`relative ${bgColor} shadow-lg rounded-xl w-full max-w-lg flex flex-col transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl`}
     >
       {/* Light glow effect */}
       <div

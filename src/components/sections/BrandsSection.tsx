@@ -1,6 +1,7 @@
 import FourImageCard from "../ui/FourImageCard";
 import FullWidthFirstImageCard from "../ui/FullWidthFirstImageCard";
 import OneImageCard from "../ui/OneImageCard";
+import SectionSlider from "../ui/SectionSlider";
 
 const BrandsSection = () => {
   return (
@@ -10,15 +11,16 @@ const BrandsSection = () => {
       <h2 className="text-2xl font-bold text-white text-center mb-6">Brands</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <FourImageCard />
-        <OneImageCard />
-        <FullWidthFirstImageCard />
-        <FourImageCard />
-        <FourImageCard />
-        <OneImageCard />
-        <FullWidthFirstImageCard />
-        <FourImageCard />
+        <FourImageCard bgColor="bg-white" />
+        <OneImageCard bgColor="bg-white" />
+        <FullWidthFirstImageCard bgColor="bg-white" />
+        <FourImageCard bgColor="bg-white" />
+        <FourImageCard bgColor="bg-white" />
+        <OneImageCard bgColor="bg-white" />
+        <FullWidthFirstImageCard bgColor="bg-white" />
+        <FourImageCard bgColor="bg-white" />
       </div>
+      <SectionSlider heading="Explore Our Brands" />
     </div>
   );
 };

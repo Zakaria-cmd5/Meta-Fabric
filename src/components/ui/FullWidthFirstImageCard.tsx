@@ -4,7 +4,11 @@ import design2 from "../../assets/design-2.webp";
 import design3 from "../../assets/design-3.webp";
 import design4 from "../../assets/design-4.webp";
 
-const FullWidthFirstImageCard = () => {
+interface Props {
+  bgColor: string;
+}
+
+const FullWidthFirstImageCard = ({ bgColor }: Props) => {
   const categories = [
     { image: design1, title: "Brand 1" },
     { image: design2, title: "Brand 2" },
@@ -14,9 +18,7 @@ const FullWidthFirstImageCard = () => {
 
   return (
     <div
-      className="relative bg-white p-4 shadow-lg rounded-xl w-full max-w-lg 
-                 flex flex-col justify-between transition-all duration-300 ease-in-out 
-                 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl"
+      className={`relative ${bgColor} p-4 shadow-lg rounded-xl w-full max-w-lg flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl`}
     >
       {/* Light glow effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-gray-300/20 rounded-xl blur-lg opacity-50"></div>
