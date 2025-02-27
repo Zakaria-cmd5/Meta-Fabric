@@ -1,3 +1,4 @@
+import BrandsSection from "../components/sections/BrandsSection";
 import FashionFutureSection from "../components/sections/FashionFutureSection";
 import InnoFiSection from "../components/sections/InnoFiSection";
 import FourImageCard from "../components/ui/FourImageCard";
@@ -10,20 +11,8 @@ const HomePage = () => {
   return (
     <div className="bg-gray-200">
       <ImageSlider />
-      <div className="relative -top-32 p-5 flex flex-wrap justify-center gap-8">
-        <div className="flex justify-center w-full gap-4">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-        <div className="flex justify-center w-full gap-4 mt-8">
-          <FourImageCard />
-          <OneImageCard />
-          <FullWidthFirstImageCard />
-          <FourImageCard />
-        </div>
-      </div>
+      
+      <BrandsSection />
       <SectionSlider heading="Explore Our Brands" />
 
       <div className="mt-10 p-5 flex flex-wrap justify-center gap-8">

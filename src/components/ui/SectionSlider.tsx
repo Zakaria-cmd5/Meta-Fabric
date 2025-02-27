@@ -1,5 +1,5 @@
 interface Props {
-  heading: string
+  heading: string;
 }
 
 import { useState } from "react";
@@ -24,7 +24,7 @@ import {
   default as image5,
 } from "../../assets/brand-5.webp";
 
-const SectionSlider = ({heading}:Props) => {
+const SectionSlider = ({ heading }: Props) => {
   const images = [
     image1,
     image2,
@@ -69,9 +69,7 @@ const SectionSlider = ({heading}:Props) => {
 
   return (
     <div className="bg-white w-full py-8">
-      <h2 className="text-center text-3xl font-bold mb-6">
-        {heading}
-      </h2>
+      <h2 className="text-center text-3xl font-bold mb-6">{heading}</h2>
       <div className="relative">
         {/* Image Container */}
         <div
