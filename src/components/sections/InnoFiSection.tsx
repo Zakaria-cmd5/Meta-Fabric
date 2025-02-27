@@ -1,55 +1,69 @@
-import innofi from "../../assets/innofi.webp";
+import innofi from "../../assets/InooFi.png";
 
 const InnoFiSection = () => {
   return (
-    <div className="bg-white mt-20 grid grid-cols-2 p-5">
-      <div className="flex flex-col gap-5">
-        <div className="flex w-full">
-          <h1 className="relative top-0 w-fit ml-5 h-auto py-4 flex bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
-            InnoFi
-          </h1>
-        </div>
+    <div className="bg-gray-400 grid grid-cols-1 md:grid-cols-2 p-4 gap-4 mt-20">
+      {/* Text Section */}
+      <div className="flex flex-col gap-4 justify-center items-center bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 relative">
+        <h1 className="text-5xl font-extrabold text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-center">
+          InnoFi
+        </h1>
 
-        <div className="flex flex-col gap-4">
-          <div className="notification ml-5">
-            <div className="notiglow" />
-            <div className="notiborderglow" />
-            <div className="notititle">Innofi Funding</div>
-            <div className="notibody">
-              Get the funds you need to launch your collection.
+        {/* Notification Boxes */}
+        <div className="flex flex-col gap-4 w-full">
+          {/* Notification Box 1 */}
+          <div className="relative p-4 bg-gray-700 text-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-teal-500 opacity-20 rounded-lg"></div>
+            <div className="relative z-10">
+              <div className="font-semibold text-xl">Innofi Funding</div>
+              <p className="mt-2 text-sm">
+                Get the funds you need to launch your collection.
+              </p>
             </div>
           </div>
 
-          <div className="notification ml-5">
-            <div className="notiglow" />
-            <div className="notiborderglow" />
-            <div className="notititle">Global Exposure</div>
-            <div className="notibody">
-              Showcase your designs to a global NFT market.
+          {/* Notification Box 2 */}
+          <div className="relative p-4 bg-gray-700 text-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-teal-500 opacity-20 rounded-lg"></div>
+            <div className="relative z-10">
+              <div className="font-semibold text-xl">Global Exposure</div>
+              <p className="mt-2 text-sm">
+                Showcase your designs to a global NFT market.
+              </p>
             </div>
           </div>
 
-          <div className="notification ml-5">
-            <div className="notiglow" />
-            <div className="notiborderglow" />
-            <div className="notititle">Transform Ideas</div>
-            <div className="notibody">
-              Turn your concepts into exclusive NFT collections.
+          {/* Notification Box 3 */}
+          <div className="relative p-4 bg-gray-700 text-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-teal-500 opacity-20 rounded-lg"></div>
+            <div className="relative z-10">
+              <div className="font-semibold text-xl">Transform Ideas</div>
+              <p className="mt-2 text-sm">
+                Turn your concepts into exclusive NFT collections.
+              </p>
             </div>
           </div>
 
-          <div className="notification ml-5">
-            <div className="notiglow" />
-            <div className="notiborderglow" />
-            <div className="notititle">Exclusive Drops</div>
-            <div className="notibody">
-              Create limited-edition pieces to set trends.
+          {/* Notification Box 4 */}
+          <div className="relative p-4 bg-gray-700 text-white rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-teal-500 opacity-20 rounded-lg"></div>
+            <div className="relative z-10">
+              <div className="font-semibold text-xl">Exclusive Drops</div>
+              <p className="mt-2 text-sm">
+                Create limited-edition pieces to set trends.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="mr-20">
-        <img src={innofi} alt="InnoFi" className="object-contain" />
+
+      {/* Image Section */}
+      <div className="flex justify-center items-center">
+        <img
+          src={innofi}
+          alt="InnoFi"
+          className="w-full max-w-xs sm:max-w-md lg:max-w-lg object-contain rounded-xl shadow-lg"
+        />
       </div>
     </div>
   );
