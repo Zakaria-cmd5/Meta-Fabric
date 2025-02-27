@@ -1,3 +1,4 @@
+import InnoFiSection from "../components/sections/InnoFiSection";
 import FourImageCard from "../components/ui/FourImageCard";
 import FullWidthFirstImageCard from "../components/ui/FullWidthFirstImageCard";
 import ImageSlider from "../components/ui/ImageSlider";
@@ -71,6 +72,8 @@ const HomePage = () => {
         </div>
       </div>
       <SectionSlider heading="Explore Our Creator" />
+
+      <InnoFiSection />
     </div>
   );
 };
