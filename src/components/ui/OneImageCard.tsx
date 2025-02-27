@@ -3,7 +3,7 @@ import brand5 from "../../assets/brand-5.webp";
 
 const OneImageCard = () => {
   return (
-    <div className="bg-sky-100 p-4 shadow-md rounded-md w-full max-w-md flex flex-col justify-between">
+    <div className="bg-white p-4 shadow-md rounded-md w-full max-w-md flex flex-col justify-between">
       <h2 className="text-lg font-bold mb-4">Get your Brand on</h2>
 
       <div className="flex justify-center mb-4">

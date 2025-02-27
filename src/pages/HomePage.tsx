@@ -6,7 +6,7 @@ import SectionSlider from "../components/ui/SectionSlider";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="bg-gray-200">
       <ImageSlider />
       <div className="relative -top-32 p-5 flex flex-wrap justify-center gap-8">
         <div className="flex justify-center w-full gap-4">
@@ -23,7 +23,7 @@ const HomePage = () => {
         </div>
       </div>
       <SectionSlider />
-    </>
+    </div>
   );
 };
 

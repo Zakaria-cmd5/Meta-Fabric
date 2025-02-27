@@ -1,23 +1,23 @@
 import { useState } from "react";
 import {
-    default as image1,
-    default as image6,
+  default as image1,
+  default as image6,
 } from "../../assets/brand-1.webp";
 import {
-    default as image2,
-    default as image7,
+  default as image2,
+  default as image7,
 } from "../../assets/brand-2.webp";
 import {
-    default as image3,
-    default as image8,
+  default as image3,
+  default as image8,
 } from "../../assets/brand-3.webp";
 import {
-    default as image4,
-    default as image9,
+  default as image4,
+  default as image9,
 } from "../../assets/brand-4.webp";
 import {
-    default as image10,
-    default as image5,
+  default as image10,
+  default as image5,
 } from "../../assets/brand-5.webp";
 
 const SectionSlider = () => {
@@ -64,7 +64,7 @@ const SectionSlider = () => {
   };
 
   return (
-    <div className="bg-gray-300 w-full py-8">
+    <div className="bg-white w-full py-8">
       <h2 className="text-center text-3xl font-bold mb-6">
         Explore Our Brands
       </h2>

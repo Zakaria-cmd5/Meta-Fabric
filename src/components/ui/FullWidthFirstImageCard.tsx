@@ -13,7 +13,7 @@ const FullWidthFirstImageCard = () => {
   ];
 
   return (
-    <div className="bg-sky-100 p-4 shadow-md rounded-md w-full max-w-md flex flex-col justify-between">
+    <div className="bg-white p-4 shadow-md rounded-md w-full max-w-md flex flex-col justify-between">
       <h2 className="text-lg font-bold mb-4">Shop for finding your brand</h2>
 
       <div className="flex flex-col items-center mb-4">
