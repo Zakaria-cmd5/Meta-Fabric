@@ -14,7 +14,7 @@ const FashionFutureSection = () => {
       {/* Text Section */}
       <div className="flex flex-col gap-4 justify-center items-center bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 relative">
         <h1 className="text-5xl font-extrabold text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-center">
-          InnoFi
+          Meta Fabric
         </h1>
 
         {/* Notification Boxes */}
