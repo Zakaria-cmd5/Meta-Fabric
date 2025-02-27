@@ -60,12 +60,23 @@ const ImageSlider = () => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, idx) => (
-          <div key={idx} className="w-full flex-shrink-0 h-full">
-            <img
-              src={img}
-              alt={`Slide ${idx}`}
-              className="w-full h-full object-cover"
-            />
+          <div
+            key={idx}
+            className="w-full flex-shrink-0 h-full relative"
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            {/* Text Overlay */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold p-4">
+              {/* This is where you can put your text */}
+              <p>Slide {idx + 1} - Amazing Cars</p>
+            </div>
+
+            {/* Add shadow effect */}
+            <div className="absolute inset-0 bg-black opacity-40"></div>
           </div>
         ))}
       </div>
