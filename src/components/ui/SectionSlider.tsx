@@ -1,3 +1,7 @@
+interface Props {
+  heading: string
+}
+
 import { useState } from "react";
 import {
   default as image1,
@@ -20,7 +24,7 @@ import {
   default as image5,
 } from "../../assets/brand-5.webp";
 
-const SectionSlider = () => {
+const SectionSlider = ({heading}:Props) => {
   const images = [
     image1,
     image2,
@@ -66,7 +70,7 @@ const SectionSlider = () => {
   return (
     <div className="bg-white w-full py-8">
       <h2 className="text-center text-3xl font-bold mb-6">
-        Explore Our Brands
+        {heading}
       </h2>
       <div className="relative">
         {/* Image Container */}
