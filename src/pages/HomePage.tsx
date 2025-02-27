@@ -1,3 +1,4 @@
+import FashionFutureSection from "../components/sections/FashionFutureSection";
 import InnoFiSection from "../components/sections/InnoFiSection";
 import FourImageCard from "../components/ui/FourImageCard";
 import FullWidthFirstImageCard from "../components/ui/FullWidthFirstImageCard";
@@ -74,6 +75,8 @@ const HomePage = () => {
       <SectionSlider heading="Explore Our Creator" />
 
       <InnoFiSection />
+
+      <FashionFutureSection />
     </div>
   );
 };
