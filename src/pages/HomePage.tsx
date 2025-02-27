@@ -3,6 +3,7 @@ import BrandsSection from "../components/sections/BrandsSection";
 import CreatorSection from "../components/sections/CreatorSection";
 import DesignerSection from "../components/sections/DesignerSection";
 import FashionFutureSection from "../components/sections/FashionFutureSection";
+import HistorySection from "../components/sections/HistorySection";
 import InnoFiSection from "../components/sections/InnoFiSection";
 import ImageSlider from "../components/ui/ImageSlider";
 
@@ -18,6 +19,8 @@ const HomePage = () => {
 
       <InnoFiSection />
       <FashionFutureSection />
+
+      <HistorySection />
     </div>
   );
 };
