@@ -2,7 +2,7 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchBar = () => {
   return (
-    <div className="hidden md:flex flex-1 mx-4">
+    <div className="hidden md:flex flex-1 mr-32 mx-4">
       <div
         className="flex w-[80%] ml-48 border border-gray-300 rounded-md overflow-hidden 
           hover:ring-2 focus-within:ring-2 ring-blue-500 transition-all duration-200 ease-in-out"
@@ -10,10 +10,10 @@ const SearchBar = () => {
         {/* Super Compact Dropdown */}
         <select className="bg-gray-200 text-xs px-1 py-1 border-r border-gray-300 focus:outline-none w-14 text-black">
           <option>All</option>
-          <option>BRANDS</option>
-          <option>DESIGNERS</option>
-          <option>ARTISTS</option>
-          <option>CREATORS</option>
+          <option>Brands</option>
+          <option>Designers</option>
+          <option>Artist</option>
+          <option>Creators</option>
         </select>
 
         {/* Search Input */}
